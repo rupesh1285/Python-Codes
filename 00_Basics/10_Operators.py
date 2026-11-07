@@ -78,6 +78,63 @@ print(m and n)  # False (True AND False)
 print(m or n)   # True (True OR False)  
 print(not m)    # False (NOT True)
 
+# Identity Operators :- (is, is not)
+
+x2 = ["apple", "banana"]
+y2 = ["apple", "banana"]
+z2 = x2
+
+print(x2 is z2) # True (x2 and z2 refer to the same object in memory)
+print(x2 == z2) # True (x2 and z2 have the same content)
+print(x2 is y2) # False (x2 and y2 refer to different objects in memory)
+
+print(x2 is not z2) # False (x2 and z2 refer to the same object in memory)
+print(x2 != z2) # False (x2 and z2 have the same content
+print(x2 is not y2) # True (x2 and y2 refer to different objects in memory)
+
+# Membership Operators :- (in, not in)
+
+fruits = ["apple", "banana", "cherry"]
+print("banana" in fruits)  # True (banana is in the list)
+print("grape" not in fruits)  # True (grape is not in the list)
+print("apple" in fruits)  # True (apple is in the list)
+
+# Bitwise Operators
+x3 = 5  # Binary: 0101
+y3 = 3  # Binary: 0011
+
+print(x3 & y3)  # Bitwise AND: 0101 & 0011 = 0001 (1)
+print(x3 | y3)  # Bitwise OR: 0101 | 0011 = 0111 (7)
+print(x3 ^ y3)  # Bitwise XOR: 0101 ^ 0011 = 0110 (6)
+print(~x3)      # Bitwise NOT: ~0101 = 1010 (-6)
+print(x3 << 1)  # Bitwise Left Shift: 0101 << 1 = 1010 (10)
+print(x3 >> 1)  # Bitwise Right Shift: 0101 >> 1 = 0010 (2)
+
+
+# Operator Precedence
+# Operator precedence determines the order in which operations are performed in an expression. Operators with higher precedence
+
+# 1. Parentheses ()
+# 2. Exponentiation **
+# 3. Unary operators +, -, ~
+# 4. Multiplication *, /, //, %
+# 5. Addition +, -
+# 6. Bitwise shift <<, >>
+# 7. Bitwise AND &
+# 8. Bitwise XOR ^
+# 9. Bitwise OR |
+# 10. Comparison operators ==, !=, <, >, <=, >=
+# 11. Logical operators and, or, not
+
+# Left-to-Right Evaluation
+# In the absence of parentheses, operators are evaluated from left to right.
+# For example, in the expression 2 + 3 * 4, the multiplication is performed first (due to higher precedence), resulting in 2 + 12 = 14.
+# If we want to change the order of operations, we can use parentheses: (2 + 3) * 4 = 5 * 4 = 20.
+
+
+
+
+
 
 
 
