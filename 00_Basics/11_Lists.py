@@ -97,3 +97,64 @@ removed_index_list = ["apple", "banana", "cherry"]
 del removed_index_list[1] # Removes the item at index 1
 print(removed_index_list)
 
+# Del Keyword
+del_keyword_list = ["apple", "banana", "cherry"]
+del del_keyword_list # Deletes the entire list
+print(del_keyword_list) # This will cause an error because the list is deleted
+
+# pop() Method
+pop_method_list = ["apple", "banana", "cherry"]
+popped_item = pop_method_list.pop() # Removes and returns the last item
+print(popped_item) # Prints the popped item
+
+# Clear List
+clear_list = ["apple", "banana", "cherry"]
+clear_list.clear() # Clears all items from the list
+print(clear_list) # Prints an empty list
+
+# Loop Through a List
+loop_list = ["apple", "banana", "cherry"]
+for fruit in loop_list:
+  print(fruit)
+
+# Loop Through a List Using Indexes
+index_loop_list = ["apple", "banana", "cherry"]
+for i in range(len(index_loop_list)):
+  print(index_loop_list[i])
+
+
+# Loop Through a List Using While Loop
+while_loop_list = ["apple", "banana", "cherry"]
+i = 0
+while i < len(while_loop_list):
+  print(while_loop_list[i])
+  i += 1
+
+# List Comprehension
+comprehension_list = ["apple", "banana", "cherry", "kiwi", "mango"]
+newlist = [x for x in comprehension_list if "a" in x] # Returns a new list containing only the items with the letter "a"
+print(newlist)
+
+
+# Sorting Lists
+# Sort List Alphanumerically
+sort_list = ["banana", "Orange", "Kiwi", "cherry"]
+sort_list.sort()
+print(sort_list)
+
+numeric_sort_list = [100, 50, 65, 82, 23]
+numeric_sort_list.sort()
+print(numeric_sort_list)
+
+# Sort List Reverse Alphanumerically
+reverse_sort_list = ["banana", "Orange", "Kiwi", "cherry"]
+reverse_sort_list.sort(reverse=True)
+print(reverse_sort_list)
+
+reverse_numeric_sort_list = [100, 50, 65, 82, 23]
+reverse_numeric_sort_list.sort(reverse=True)
+print(reverse_numeric_sort_list)
+
+
+
+
