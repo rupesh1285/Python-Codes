@@ -79,4 +79,38 @@ newtuple2 = ("apple", "banana", "cherry")
 if "apple" in newtuple2:
     print("Yes, 'apple' is in the fruits tuple")
 
+# Updating Tuples
+"""
+You cannot change the items in a tuple, but you can convert the tuple into a list, change the list, and convert the list back into a tuple.
+"""
+
+# Convert the tuple into a list to be able to change it
+thistuple = ("apple", "banana", "cherry")
+y = list(thistuple)
+y[1] = "kiwi"
+thistuple = tuple(y)
+
+# Example:
+x = ("apple", "banana", "cherry")
+y = list(x)
+y[1] = "kiwi"
+x = tuple(y)
+print(x)  # ("apple", "kiwi", "cherry")
+
+# Add tuple to a tuple
+thistuple = ("apple", "banana", "cherry")
+y = ("orange",)
+thistuple += y
+print(thistuple)  # ("apple", "banana", "cherry", "orange")
+
+# Deleting Tuples
+
+thistuple = ("apple", "banana", "cherry")
+del thistuple
+print(thistuple)  # This will raise an error because the tuple is deleted
+
+# Unpacking Tuples 
+
+
+
 
