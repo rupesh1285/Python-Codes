@@ -107,10 +107,72 @@ print(thistuple)  # ("apple", "banana", "cherry", "orange")
 
 thistuple = ("apple", "banana", "cherry")
 del thistuple
-print(thistuple)  # This will raise an error because the tuple is deleted
+# print(thistuple)  # This will raise an error because the tuple is deleted
 
 # Unpacking Tuples 
+fruits = ("apple", "banana", "cherry")
+(green, yellow, red) = fruits
+
+print(green)
+print(yellow)
+print(red)
 
 
 
+# Using Asterisk*
+fruits = ("apple", "banana", "cherry", "strawberry", "raspberry")
+(green, yellow, *red) = fruits
+
+print(green)
+print(yellow)
+print(red)
+
+# Tropic Astrik 
+fruits = ("apple", "mango", "papaya", "pineapple", "cherry")
+(green, *tropic, red) = fruits
+
+print(green) # Will print the first item in the tuple
+print(tropic) # Will print the items in the middle of the tuple
+print(red) # Will print the last item in the tuple
+
+
+# Loop Through a Tuple
+thistuple = ("apple", "banana", "cherry")
+for x in thistuple:
+    print(x)
+
+# Loop Through the Index Numbers
+thistuple = ("apple", "banana", "cherry")
+for i in range(len(thistuple)):
+    print(thistuple[i])
+
+# Looping Using a While Loop
+thistuple = ("apple", "banana", "cherry")
+i = 0
+while i < len(thistuple):
+    print(thistuple[i])
+    i = i + 1
+
+# Join Two Tuples
+tuple1 = ("a", "b", "c")
+tuple2 = (1, 2, 3)
+tuple3 = tuple1 + tuple2
+print(tuple3)  # ('a', 'b', 'c', 1, 2, 3)
+
+# Multiply Tuples
+fruits = ("apple", "banana", "cherry")
+mytuple = fruits * 2
+print(mytuple)  # ('apple', 'banana', 'cherry', 'apple', 'banana', 'cherry')
+
+# Tuple Methods
+
+# count() - Returns the number of times a specified value occurs in a tuple
+thistuple = ("apple", "banana", "cherry", "apple")
+x = thistuple.count("apple")
+print(x)  # 2
+
+# index() - Searches the tuple for a specified value and returns the position of where it was found
+thistuple = ("apple", "banana", "cherry")
+x = thistuple.index("cherry")
+print(x)  # 2
 
