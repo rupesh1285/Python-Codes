@@ -156,5 +156,49 @@ reverse_numeric_sort_list.sort(reverse=True)
 print(reverse_numeric_sort_list)
 
 
+# Case Insensitive Sort
+case_insensitive_sort_list = ["banana", "Orange", "Kiwi", "cherry"]
+case_insensitive_sort_list.sort(key=str.lower) # Sorts the list in a case-ins
+itive manner
+print(case_insensitive_sort_list)
+
+# Custom Sort Function
+def myfunc(n):
+  return abs(n - 50) # Sorts the list based on the distance from 50
+
+custom_sort_list = [100, 50, 65, 82, 23]
+custom_sort_list.sort(key=myfunc)
+
+#  Copy a List
+original_list = ["apple", "banana", "cherry"]
+copied_list = original_list.copy()
+print(copied_list)
+
+# Use the list() method
+list_method_list = list(original_list)
+print(list_method_list)
+
+# Use the slice Operator
+slice_operator_list = original_list[:]
+print(slice_operator_list)
+ 
+
+# Join Two Lists
+list1 = ["a", "b", "c"]
+list2 = [1, 2, 3]
+list3 = list1 + list2
+print(list3)
+
+# Append List2 into List1
+append_list1 = ["a", "b", "c"]
+append_list2 = [1, 2, 3]    
+append_list1.extend(append_list2)
+print(append_list1)
+
+# Extend List1 by Adding List2 at the End
+extend_list1 = ["a", "b", "c"]
+extend_list2 = [1, 2, 3]
+extend_list1.extend(extend_list2)
+print(extend_list1)
 
 
