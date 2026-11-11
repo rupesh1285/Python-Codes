@@ -213,3 +213,96 @@ set46 = set45.symmetric_difference(frozenset4)
 print(set46)  # Output: {1, 2, 4, 5}
 
 # Set Methods
+
+set47 = {1, 2, 3, 4, 5}
+# add() - Adds an element to the set
+set47.add(6)
+print(set47)  # Output: {1, 2, 3, 4, 5, 6}
+
+# clear() - Removes all elements from the set
+set47.clear()
+print(set47)  # Output: set()
+
+# copy() - Returns a shallow copy of the set
+set48 = {1, 2, 3, 4, 5}
+set49 = set48.copy()
+print(set49)  # Output: {1, 2, 3, 4, 5}
+
+# difference() - Returns a set containing the difference between two or more sets
+set50 = {1, 2, 3, 4, 5}
+set51 = {4, 5, 6, 7, 8}
+set52 = set50.difference(set51)
+print(set52)  # Output: {1, 2, 3}
+
+# difference_update() - Removes the items in this set that are also included in another specified set
+set53 = {1, 2, 3, 4, 5}
+set54 = {4, 5, 6, 7, 8}
+set53.difference_update(set54)
+print(set53)  # Output: {1, 2, 3}
+
+# discard() - Removes the specified item from the set
+set55 = {1, 2, 3, 4, 5}
+set55.discard(3)
+print(set55)  # Output: {1, 2, 4, 5}
+
+# intersection() - Returns a set, that is the intersection of two other sets
+set56 = {1, 2, 3, 4, 5}
+set57 = {4, 5, 6, 7, 8}
+set58 = set56.intersection(set57)
+print(set58)  # Output: {4, 5}
+
+# intersection_update() - Removes the items in this set that are not present in other, specified set(s)
+set59 = {1, 2, 3, 4, 5}
+set60 = {4, 5, 6, 7, 8}
+set59.intersection_update(set60)
+print(set59)  # Output: {4, 5}
+
+# isdisjoint() - Returns whether two sets have a intersection or not
+set61 = {1, 2, 3}
+set62 = {4, 5, 6}
+print(set61.isdisjoint(set62))  # Output: True
+
+# issubset() - Returns whether another set contains this set or not
+set63 = {1, 2, 3}
+set64 = {1, 2, 3, 4, 5}
+print(set63.issubset(set64))  # Output: True
+
+# issuperset() - Returns whether this set contains another set or not
+set65 = {1, 2, 3, 4, 5}
+set66 = {1, 2, 3}
+print(set65.issuperset(set66))  # Output: True
+
+# pop() - Removes and returns an arbitrary set element. Raises KeyError if the set is empty.
+set67 = {1, 2, 3, 4, 5}
+popped_item = set67.pop()
+print(popped_item)  # Output: Random item from the set
+
+# remove() - Removes the specified item from the set. Raises KeyError if the item is not found.
+set68 = {1, 2, 3, 4, 5}
+set68.remove(3)
+print(set68)  # Output: {1, 2, 4, 5}
+ 
+# symmetric_difference() - Returns a set with the symmetric differences of two sets
+set69 = {1, 2, 3, 4, 5}
+set70 = {4, 5, 6, 7, 8}
+set71 = set69.symmetric_difference(set70)
+print(set71)  # Output: {1, 2, 3, 6, 7, 8}
+
+# symmetric_difference_update() - Updates a set with the symmetric differences of itself and another
+set72 = {1, 2, 3, 4, 5}
+set73 = {4, 5, 6, 7, 8}
+set72.symmetric_difference_update(set73)
+print(set72)  # Output: {1, 2, 3, 6, 7, 8}
+
+# union() - Returns a set containing the union of sets
+set74 = {1, 2, 3}
+set75 = {4, 5, 6}
+set76 = set74.union(set75)
+print(set76)  # Output: {1, 2, 3, 4, 5, 6}
+
+# update() - Updates the set with the union of itself and others
+set77 = {1, 2, 3}
+set78 = {4, 5, 6}
+set77.update(set78)
+print(set77)  # Output: {1, 2, 3, 4, 5, 6}
+
