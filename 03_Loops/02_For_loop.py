@@ -42,4 +42,10 @@ for i in range(3):
 for i in range(5):
     pass  # Do nothing, just a placeholder
 
-# 
+# The zip() Function
+names = ["Alice", "Bob", "Charlie"]
+ages = [25, 30, 35]
+for name, age in zip(names, ages):
+    print(f"{name} is {age} years old")
+
+
