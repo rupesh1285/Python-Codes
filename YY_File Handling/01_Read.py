@@ -21,3 +21,21 @@ print(line2)
 
 # Closing a file
 f.close()
+
+
+# Using the With Statement 
+"""
+with open("YY_File Handling/Sample.txt") as f:
+  print(f.read())
+
+-> Then you do not have to worry about closing your files, the with statement takes care of that.
+
+"""
+
+# Using loop to print the lines 
+
+"""
+with open("YY_File Handling/Sample.txt") as f:
+  for x in f:
+    print(x)
+"""
